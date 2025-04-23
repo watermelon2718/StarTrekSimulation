@@ -55,7 +55,7 @@ public class EnterprisePane extends StackPane {
         poweroff.setOnAction(this::processButtonPress);
 
         help = new Button ("Help");
-        Tooltip helpTip = new Tooltip("no help for you lol");
+        Tooltip helpTip = new Tooltip("click for help navigating the system");
         help.setTooltip(helpTip);
         help.setOnAction(this::processButtonPress);
 
@@ -111,13 +111,6 @@ public class EnterprisePane extends StackPane {
 
             this.getChildren().add(desktop);
 
-        
-        
-
-
-
-
-
 
     }
 
@@ -150,6 +143,10 @@ public class EnterprisePane extends StackPane {
                 this.getChildren().add(text);
             }
 
+        }
+
+        if (event.getSource() == help) {
+            //TODO
         }
 
         if (event.getSource() == redAlert) { 
